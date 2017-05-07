@@ -1,0 +1,101 @@
+{
+	"Entries": [
+		{
+			"Email": "vit619@mail.ru",
+			"Name": "4PDA",
+			"Notes": "",
+			"Password": "c29tZXBhc3N3ZA==",
+			"Username": "vit619",
+			"Website": "http:\/\/4pda.ru"
+		},
+		{
+			"Email": "zabrodin.vitaliy@gmail.com",
+			"Name": "9GAG",
+			"Notes": "",
+			"Password": "c29tZXBhc3N3ZA==",
+			"Username": "Eyeless",
+			"Website": "9gag.com"
+		},
+		{
+			"Email": "zabrodin.vitaliy@gmail.com",
+			"Name": "AIMP Forum",
+			"Notes": "Name: Eyeless",
+			"Password": "c29tZXBhc3N3ZA==",
+			"Username": "vit619",
+			"Website": "http:\/\/aimp.ru\/forum"
+		},
+		{
+			"Email": "",
+			"Name": "EX.MAIL",
+			"Notes": "",
+			"Password": "c29tZXBhc3N3ZA==",
+			"Username": "fuckmylife",
+			"Website": "http:\/\/mail.ex.ua"
+		},
+		{
+			"Email": "muefd@ya.ru",
+			"Name": "Flibusta",
+			"Notes": "",
+			"Password": "",
+			"Username": "muefd",
+			"Website": "http:\/\/flibusta.is"
+		},
+		{
+			"Email": "",
+			"Name": "ITmages",
+			"Notes": "",
+			"Password": "cGFzc3dk",
+			"Username": "zabrodin.vitaliy@gmail.com",
+			"Website": "http:\/\/itmages.ru"
+		},
+		{
+			"Email": "zabrodin.vitaliy@gmail.com",
+			"Name": "Telegram",
+			"Notes": "@somebody_someone (https:\/\/telegram.me\/somebody_someone)",
+			"Password": "cGFzc3dk",
+			"Username": "+380508560395",
+			"Website": "http:\/\/telegram.org"
+		},
+		{
+			"Email": "fuckmylife@ex.ua",
+			"Name": "VK",
+			"Notes": "",
+			"Password": "MTEx",
+			"Username": "+380508560395",
+			"Website": "http:\/\/vk.com"
+		},
+		{
+			"Email": "",
+			"Name": "Yandex",
+			"Notes": "",
+			"Password": "cGFzc3dk",
+			"Username": "muefd@ya.ru",
+			"Website": "http:\/\/yandex.ru"
+		},
+		{
+			"Email": "muefd@ya.ru",
+			"Name": "Годвилль",
+			"Notes": "",
+			"Password": "c29tZXBhc3N3ZA==",
+			"Username": "Безглазик",
+			"Website": "http:\/\/godville.net"
+		},
+		{
+			"Email": "",
+			"Name": "Роутер",
+			"Notes": "Wi-Fi password: douche bag",
+			"Password": "b3BlbmZveA==",
+			"Username": "Tynia",
+			"Website": "192.168.0.1"
+		},
+		{
+			"Email": "",
+			"Name": "Хабрахабр",
+			"Notes": "",
+			"Password": "cGFzc3dk",
+			"Username": "muefd@ya.ru",
+			"Website": "http:\/\/habrahabr.ru"
+		}
+	],
+	"Name": "Vitaliy Zabrodin"
+}

@@ -62,6 +62,7 @@ namespace SavePass.Forms
 			miFileClose.Enabled = enable;
 			miFileSave.Enabled = enable;
 			miFileSaveAs.Enabled = enable;
+			miFileExportToJson.Enabled = enable;
 			miDatabaseSettings.Enabled = enable;
 			miEntryAdd.Enabled = enable;
 			tsbtnFileSave.Enabled = enable;
@@ -69,6 +70,7 @@ namespace SavePass.Forms
 			tsbtnCopyUsername.Enabled = enable;
 			tsbtnCopyPassword.Enabled = enable;
 			tsbtnOpenURL.Enabled = enable;
+
 
 			//tsbtnEntryEdit.Enabled = enable; // fix
 			//tsbtnEntryDelete.Enabled = enable;
@@ -331,7 +333,7 @@ namespace SavePass.Forms
 			{
 				_savepass.Save();
 				_isFileSaved = true;
-				this.Text = string.Format("{0} - Password Manager", _savepass.Root.Name);
+				Text = string.Format("{0} - Password Manager", _savepass.Root.Name);
 			}
 		}
 
@@ -341,7 +343,14 @@ namespace SavePass.Forms
 			if (saveFileDialog1.ShowDialog() != DialogResult.OK) return;
 			_savepass.Save(saveFileDialog1.FileName);
 			_isFileSaved = true;
-			this.Text = string.Format("{0} - Password Manager", _savepass.Root.Name);
+			Text = string.Format("{0} - Password Manager", _savepass.Root.Name);
+		}
+
+		private void miFileExportToJson_Click(object sender, EventArgs e)
+		{
+			saveFileDialog2.FileName = string.Empty;
+			if (saveFileDialog2.ShowDialog() != DialogResult.OK) return;
+			_savepass.SaveJson(saveFileDialog2.FileName);
 		}
 
 		private void FileClose_Click(object sender, EventArgs e)

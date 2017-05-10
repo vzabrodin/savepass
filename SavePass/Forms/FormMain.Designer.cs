@@ -38,6 +38,7 @@
 			this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
 			this.miFileSave = new System.Windows.Forms.ToolStripMenuItem();
 			this.miFileSaveAs = new System.Windows.Forms.ToolStripMenuItem();
+			this.miFileExportToJson = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
 			this.miDatabaseSettings = new System.Windows.Forms.ToolStripMenuItem();
 			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
@@ -98,6 +99,7 @@
 			this.lPassword2 = new System.Windows.Forms.Label();
 			this.lWebsite2 = new System.Windows.Forms.Label();
 			this.lEmail2 = new System.Windows.Forms.Label();
+			this.saveFileDialog2 = new System.Windows.Forms.SaveFileDialog();
 			this.menuStrip1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dgEntries)).BeginInit();
 			this.panEntryEdit.SuspendLayout();
@@ -130,6 +132,7 @@
             this.toolStripMenuItem2,
             this.miFileSave,
             this.miFileSaveAs,
+            this.miFileExportToJson,
             this.toolStripSeparator1,
             this.miDatabaseSettings,
             this.toolStripSeparator3,
@@ -191,6 +194,14 @@
 			this.miFileSaveAs.Size = new System.Drawing.Size(216, 22);
 			this.miFileSaveAs.Text = "Save as...";
 			this.miFileSaveAs.Click += new System.EventHandler(this.FileSaveAs_Click);
+			// 
+			// miFileExportToJson
+			// 
+			this.miFileExportToJson.Enabled = false;
+			this.miFileExportToJson.Name = "miFileExportToJson";
+			this.miFileExportToJson.Size = new System.Drawing.Size(216, 22);
+			this.miFileExportToJson.Text = "Export...";
+			this.miFileExportToJson.Click += new System.EventHandler(this.miFileExportToJson_Click);
 			// 
 			// toolStripSeparator1
 			// 
@@ -268,7 +279,7 @@
 			// 
 			this.miHelpAbout.Name = "miHelpAbout";
 			this.miHelpAbout.ShortcutKeys = System.Windows.Forms.Keys.F1;
-			this.miHelpAbout.Size = new System.Drawing.Size(152, 22);
+			this.miHelpAbout.Size = new System.Drawing.Size(135, 22);
 			this.miHelpAbout.Text = "About...";
 			this.miHelpAbout.Click += new System.EventHandler(this.HelpAbout_Click);
 			// 
@@ -838,6 +849,12 @@
 			this.lEmail2.TabIndex = 0;
 			this.lEmail2.Text = "E-mail:";
 			// 
+			// saveFileDialog2
+			// 
+			this.saveFileDialog2.Filter = "JSON file (*.json)|*.json|All files (*.*)|*.*";
+			this.saveFileDialog2.SupportMultiDottedExtensions = true;
+			this.saveFileDialog2.Title = "Save";
+			// 
 			// FormMain
 			// 
 			this.AllowDrop = true;
@@ -947,6 +964,8 @@
 		private System.Windows.Forms.Label lWebsite2;
 		private System.Windows.Forms.Label lEmail2;
 		private System.Windows.Forms.DataGridViewTextBoxColumn EntryName;
+		private System.Windows.Forms.ToolStripMenuItem miFileExportToJson;
+		private System.Windows.Forms.SaveFileDialog saveFileDialog2;
 	}
 }
 

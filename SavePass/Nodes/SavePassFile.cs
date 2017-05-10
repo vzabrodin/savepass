@@ -132,6 +132,14 @@ namespace SavePass.Nodes
 			Save();
 		}
 
+		public void SaveJson(string filepath)
+		{
+			using (var wr = new FileStream(filepath, FileMode.Create, FileAccess.Write))
+			{
+				_jsonFormatter.WriteObject(wr, Root);
+			}
+		}
+
 		/// <summary>
 		/// Закрывает открытый файл
 		/// </summary>
